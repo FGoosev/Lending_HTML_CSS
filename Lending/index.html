@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru" class="bg-dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Angar64</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#menu").on("click", "a", function(event) {
+                event.preventDefault();
+                var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({
+                    scrollTop: top
+                }, 1500);
+            });
+        });
+    </script>
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="menu">
+            <div class="container-fluid containerNav">
+                <div class="logo">
+                    <img src="img/Logo.jpg" alt="" class="imgMargin imgBorder">
+                </div>
+                <button class="navbar-brand btnNav" onclick="scrollToHandler(0)">Angar64</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <button class="nav-link btnNav" aria-current="page" onclick="scrollToHandler(800)">Услуги</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link btnNav" onclick="scrollToHandler(2450)">Работа</button>
+                        </li>
+                    </ul>
+                </div>
+                <!--<div class="col-12 col-lg-auto mb-2  mb-md-0 slogan">
+                    <img src="img/Slogan.jpg" alt="" class="imgMargin">
+                </div>-->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="background bg-dark">
+            <div class="angar64">
+                <img src="img/image.png" alt="" class="angarPos">
+            </div>
+            <div class="infoContainer">
+                <div class="cont">
+                    <h1 class="headText">ANGAR DOES THINGS!</h1>
+                    <h3 class="mainText">ANGAR - это место, где без труда и в комфортной, светлой и теплой обстановке можно позаниматься своим авто! Работаем с 9:00 и до последнего клиента. Будем рады видеть вас у нас! ANGAR расположен по адресу Саратовская область, г. Энгельс,
+                        ул. Студенческая 205
+                    </h3>
+                </div>
+                <div class="contImg">
+                    <img src="img/Slogan.jpg" alt="" class="imgSlogan">
+                </div>
+            </div>
+        </div>
+
+
+        <hr class="featurette-divider" id="service">
+
+        <div class="container">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+
+                <div class="col-lg-4 p-3 textCenter">
+                    <h2>Химчистка</h2>
+                    <div class="imgInfo"><img src="img/iconService/1.jpeg" alt="" class="iconImg"></div>
+                    <p class="infoService">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, eaque! Deserunt laboriosam laborum consequuntur asperiores omnis unde expedita, nobis recusandae nemo ratione illum consectetur accusantium ex commodi alias dolorum inventore!</p>
+                </div>
+
+                <div class="col-lg-4 p-3 textCenter">
+                    <h2>Полировка</h2>
+                    <div class="imgInfo"><img src="img/iconService/2.jpg" alt="" class="iconImg"></div>
+                    <p class="infoService">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti illo illum odio consectetur consequuntur! Ducimus exercitationem at illo perspiciatis, doloremque nobis quia facere unde sequi reiciendis iusto praesentium molestias.
+                        Dicta.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 p-3 textCenter">
+                    <h2>Тонировка</h2>
+                    <div class="imgInfo"><img src="img/iconService/3.jpg" alt="" class="iconImg"></div>
+                    <p class="infoService">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore itaque ad in unde debitis quae, nihil dolor reprehenderit sapiente, alias mollitia? Recusandae facilis ea, labore corrupti minima dolor quod commodi!</p>
+                </div>
+                <div class="col-lg-4 p-3 textCenter">
+                    <h2>Покраска дисков</h2>
+                    <div class="imgInfo"><img src="img/iconService/4.jpg" alt="" class="iconImg"></div>
+                    <p class="infoService">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore itaque ad in unde debitis quae, nihil dolor reprehenderit sapiente, alias mollitia? Recusandae facilis ea, labore corrupti minima dolor quod commodi!</p>
+                </div>
+                <div class="col-lg-4 p-3 textCenter">
+                    <h2>Установка музыки</h2>
+                    <div class="imgInfo"><img src="img/iconService/5.jpg" alt="" class="iconImg"></div>
+                    <p class="infoService">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore itaque ad in unde debitis quae, nihil dolor reprehenderit sapiente, alias mollitia? Recusandae facilis ea, labore corrupti minima dolor quod commodi!</p>
+                </div>
+                <div class="col-lg-4 p-3 textCenter">
+                    <h2>Шумоизоляция</h2>
+                    <div class="imgInfo"><img src="img/iconService/6.jpg" alt="" class="iconImg"></div>
+                    <p class="infoService">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore itaque ad in unde debitis quae, nihil dolor reprehenderit sapiente, alias mollitia? Recusandae facilis ea, labore corrupti minima dolor quod commodi!</p>
+                </div>
+                <div class="col-lg-4 p-3 textCenter">
+                    <h2>Проверка авто</h2>
+                    <div class="imgInfo"><img src="img/iconService/7.jpg" alt="" class="iconImg"></div>
+                    <p class="infoService">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore itaque ad in unde debitis quae, nihil dolor reprehenderit sapiente, alias mollitia? Recusandae facilis ea, labore corrupti minima dolor quod commodi!</p>
+                </div>
+                <div class="col-lg-4 p-3 textCenter">
+                    <h2>Покраска деталей</h2>
+                    <div class="imgInfo"><img src="img/iconService/8.jpg" alt="" class="iconImg"></div>
+                    <p class="infoService">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore itaque ad in unde debitis quae, nihil dolor reprehenderit sapiente, alias mollitia? Recusandae facilis ea, labore corrupti minima dolor quod commodi!</p>
+                </div>
+
+                <div class="col-lg-4 p-3 textCenter">
+                    <h2>Бронепленка</h2>
+                    <div class="imgInfo"><img src="img/iconService/9.jpg" alt="" class="iconImg"></div>
+                    <p class="infoService">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore itaque ad in unde debitis quae, nihil dolor reprehenderit sapiente, alias mollitia? Recusandae facilis ea, labore corrupti minima dolor quod commodi!</p>
+                </div>
+                <div id="work"></div>
+            </div>
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+
+            <div class="row featurette ">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
+                            mind.</span></h2>
+                    <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                </div>
+                <div class="col-md-5 divImg">
+                    <img src="img/AngarAuto.jpg" alt="" class="imgMargin">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-6 order-md-2 ">
+                    <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                            yourself.</span></h2>
+                    <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+                </div>
+                <div class="col-md-6 order-md-1 divImg">
+                    <img src="img/AngarAuto2.jpg" alt="" class="imgMargin">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+                    <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+                </div>
+                <div class="col-md-5 divImg">
+                    <img src="img/AngarAuto3.jpg" alt="" class="imgMargin">
+
+                </div>
+            </div>
+
+            <!-- /END THE FEATURETTES -->
+
+        </div>
+        <!-- /.container -->
+
+        <!-- FOOTER -->
+        <div class="container footerContainer">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="text-muted textSize">+7(953)-979-04-44</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3">
+                        <a class="text-muted borderA" href="#"><img src="img/iconService/icons8-вконтакте-50.png" alt="" width="40" height="40"></a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="text-muted borderA" href="#"><img src="img/iconService/icons8-instagram-50.png" alt="" width="40" height="40"></a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="text-muted borderA" href="#"><img src="img/iconService/icons8-whatsapp-50.png" alt="" width="40" height="40"></a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </main>
+    <script src="js/main.js">
+    </script>
+</body>
+
+</html>

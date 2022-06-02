@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=Shizuru&display=swap');
+body {
+    font-family: "Bebas+Neue";
+}
+
+.background {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 900px;
+    margin-top: -40px;
+    display: inline-flex;
+    text-align: center;
+}
+
+.cont {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.contImg {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.headText {
+    font-family: "Shizuru";
+    color: #FF0000;
+}
+
+.imgInfo {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 200px;
+    border: 0 solid;
+    border-radius: 100px;
+}
+
+p {
+    font-size: 25px;
+}
+
+.navbar {
+    border: 0.2px solid;
+    border-color: red;
+}
+
+.angar64 {
+    height: 300px;
+    width: 500px;
+    margin-top: 300px;
+    top: 50%;
+    margin-right: 100px;
+}
+
+
+/*
+.angarPos {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 15%;
+}
+*/
+
+.lead {
+    font-size: 25px;
+}
+
+.iconImg {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.imgMargin {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containerNav {
+    margin-left: 50px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.imgBorder {
+    border-radius: 50px;
+}
+
+.btnNav {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.aHover {
+    color: darkgray;
+}
+
+.aHover:hover {
+    color: red;
+}
+
+.divImg {
+    height: 500px;
+}
+
+.slogan {
+    width: 100px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.footerContainer {
+    height: 150px;
+    line-height: 100px;
+}
+
+.textSize {
+    font-size: 25px;
+}
+
+.mainText {
+    font-family: "Open Sans Condendes";
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+h3 {
+    font-family: "Akaya Televigala";
+}
+
+.imgSlogan {
+    max-width: 100%;
+    height: auto;
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.infoContainer {
+    width: 100%;
+    margin-top: 70px;
+}
+
+@media(max-width: 1500px) {
+    .angar64 {
+        width: 400px;
+    }
+    .infoContainer {
+        width: 60%;
+    }
+    .background {
+        height: 1000px;
+    }
+}
+
+@media(max-width: 1300px) {
+    .background {
+        width: 100%;
+        height: 900px;
+    }
+    .infoContainer {
+        width: 600px;
+    }
+    .imgSlogan {
+        width: 450px;
+        height: 350px;
+    }
+    .mainText {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .imgSlogan {
+        width: 450px;
+        height: 330px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .angar64 {
+        width: 200px;
+        height: 180px;
+    }
+    .imgSlogan {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .angarPos {
+        width: 350px;
+        height: 150px;
+    }
+    .conImg {
+        width: 400px;
+        height: 350px;
+    }
+}
+
+@media(max-width: 800px) {
+    .angar64 {
+        display: none;
+    }
+    .imgSlogan {
+        width: 450px;
+        height: 350px;
+    }
+    .infoContainer {
+        width: 100%;
+    }
+}
+
+@media(max-width: 530px) {
+    .angar64 {
+        display: none;
+    }
+    .imgSlogan {
+        width: 350px;
+        height: 250px;
+    }
+    .infoContainer {
+        width: 100%;
+    }
+}
